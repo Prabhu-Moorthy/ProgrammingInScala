@@ -1,0 +1,24 @@
+Introduction
+*********************************************************************
+Key Features of Scala
+---------------------
+1)  It has event-based concurrency model
+    Ref : http://stackoverflow.com/questions/17059225/what-is-event-driven-concurrency
+2)  It supports both an imperative style and a functional style.
+    Ref : http://programmers.stackexchange.com/questions/117276/example-of-where-functional-programming-is-superior-to-imperative-or-object-orie
+3)  It enforces sensible static typing.
+4)  It is concise and expressive.
+
+! Bang Symbol
+Scala features: actors, closures, collections, pattern matching and tuples
+
+Scala provides you with the freedom to choose and mix two styles of programming, the imperative style promoted in Java and the assignmentless
+pure functional style
+
+Scala is a statically typed language, but, unlike Java, it has sensible static typing.
+Semicolon is optional, dot is optional and parenthesis is optionsl
+instead of writing s1.equals(s2);, we can write s1 equals s2. By losing the semicolon, the parentheses, and the dot.
+
+val keyword is immutable.
+Functions are first-class citizens in Scala.
+Functions are pure in Scala.
