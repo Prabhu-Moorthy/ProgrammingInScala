@@ -95,6 +95,17 @@ object Greetings {
                 |for you-ask what you can do for your country." He then proceeded
                 |to speak to the citizens of the World...""".stripMargin
     println(str1)
+    
+    /**
+     * Sensible Defaults
+     * 1) return is optional. The last expression evaluated is automatically returned from method calls.
+     * 2) Semicolons are optionsl
+     * 3) Classes and methods are public by default
+     * 4) Scala imports 2 packages by default scala.Predef and java.lang
+     * 
+     * When we are reffering to set or map in a scala code we are pointing to the set or map in scala.collections package
+     **/
+     
 
     /**
       * Operator Overloading
