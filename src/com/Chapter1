@@ -10,6 +10,7 @@ Key Features of Scala
 4)  It is concise and expressive.
 
 ! Bang Symbol
+_ Represents tha argument passed to this function
 Scala features: actors, closures, collections, pattern matching and tuples
 
 Scala provides you with the freedom to choose and mix two styles of programming, the imperative style promoted in Java and the assignmentless
