@@ -1,5 +1,7 @@
 package com.scala.chapter3
 
+import java.util
+
 /**
   * Created by Prabhu on 25-08-2016.
   */
@@ -126,5 +128,58 @@ object Greetings {
       */
     val c3 = new Complex(2,2)
     println(c1 + c2 * c3)
+
+    /*
+     * ########################################################
+     * <h1>3.7 Scala Surprises for the Java Eyes</h1>
+     * ########################################################
+     */
+    /**
+      * <b>Result of Assignment</b>
+      * 1) The result of the assignment operation (a = b) in Scala is a Unit.
+      * 2) In Java,the result of the assignment is the value of a, so multiple assignments
+      *    like a = b = c; can appear in series in Java, but not so in Scala
+      * 3) The below statement will throw an error
+      */
+
+    //var a,b,c = 1
+    //a = b = c
+
+    /**
+      * <b>Scala's ==</b>
+      * 1) Unlike java which handles == differently for primitives and objects.
+      * 2) if a and b are int, then a == b results in true if both the variables have equal values.
+      * 3) if they’re references to objects, the result is true only if both references are pointing to the same instance, that is, the same identity
+      * 4) In Scala, == represents value-based comparison, no matter what the type is. (Similar to .equals in java)
+      * 5) If we want identity based comparison then we use eq() method
+      */
+
+    val strin1 = "hello"
+    val strin2 = "hello"
+    val strin3 = new String("hello")
+
+    println(strin1 == strin2) //Equivalent to java's strin1.equals(strin2)
+    println(strin1 eq strin2) //Equivalent to java's strin1 == strin2
+    println(strin1 == strin3)
+    println(strin1 eq strin3)
+
+    /**
+      * <b>; is semi optional</b>
+      * In the below code for list1 when we gave a ; at the end the scala compiler intrepreted the next print line as a next line
+      * Where as for list2 Scala intrepreted list2 as an annonymous inner class
+      */
+    val list1 = new util.ArrayList[Int];
+    {
+      println("Created list1")
+    }
+
+    val list2 = new util.ArrayList[Int]
+    {
+      println("Created list1")
+    }
+
+    println(list1.getClass)
+    println(list2.getClass)
+
   }
 }
